@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  padding-left: 5%;
+
+  flex-direction: column;
+}
+h1 {
+  width: 27vw;
+  height: 7.5;
+  left: 68px;
+  top: 951px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 25%;
+}
+
+.poster {
+  width: 95% !important;
+}

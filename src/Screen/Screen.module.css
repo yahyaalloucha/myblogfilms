@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.4;
+  padding-top: 100px;
+}
+.h1 {
+  color: black;
+}
+
+.info {
+  position: absolute;
+  bottom: 100px;
+  left: 5vw;
+}
+.trading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 500px;
+}

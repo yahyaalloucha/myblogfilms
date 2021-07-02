@@ -1,0 +1,70 @@
+.Container {
+  display: flex;
+  width: 100vw;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+
+  background: #1a1f38;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+  position: fixed;
+}
+.vilm {
+  margin-left: 80px !important;
+  display: flex;
+}
+.h1 {
+  position: absolute;
+  width: 106px;
+  height: 58px;
+  left: 70px;
+  top: 16px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+.input {
+  position: absolute;
+  width: 475px;
+  height: 58px;
+  left: 896px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 8px;
+}
+.input1 {
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
+  align-self: center;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+textarea:focus,
+.input1:focus {
+  outline: none !important;
+}
+.input1:focus {
+  outline: none;
+}
+.Vector {
+  position: absolute;
+  left: 12.5%;
+  right: 12.48%;
+  top: 12.5%;
+  bottom: 12.48%;
+
+  background: #ffffff;
+}
