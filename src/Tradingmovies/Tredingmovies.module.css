@@ -19,13 +19,21 @@ h1 {
 
   color: #ffffff;
 }
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
 .contents {
   display: flex;
   flex-direction: column;
-  float: left;
-  width: 25%;
+  width: 33%;
+  max-width: 33%;
+  height: 700px;
+  padding: 12px 12px;
+  box-sizing: border-box;
 }
 
 .poster {
-  width: 95% !important;
+  max-height: 600px;
+  object-fit: cover;
 }

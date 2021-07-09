@@ -9,6 +9,9 @@ function Tredingmovies() {
   useEffect(() => {
     Client.fetch(
       `*[_type=='movie'] {  title,
+        releaseDate,
+        rating,
+        
       slug,
       poster{asset->{url}}
       }`
@@ -24,20 +27,23 @@ function Tredingmovies() {
     <div className={style.container}>
       <h1>Treding Movies</h1>
       <div className={style.movies}>
+        /*
         {Data.map((movie) => {
           return (
             <div className={style.contents}>
               <p
+                key={movie.title}
                 style={{
                   color: "white",
                 }}
-                key={movie.title}
               >
                 {movie.title}
               </p>
+
               <span>
                 <img src={movie.poster.asset.url} className={style.poster} />
               </span>
+              <p style={{ color: "white" }}>{movie.releaseDate.substr(0, 4)}</p>
             </div>
           );
         })}

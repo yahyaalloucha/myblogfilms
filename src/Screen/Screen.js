@@ -1,8 +1,28 @@
 import style from "./Screen.module.css";
+import React, { useEffect, useState } from "react";
 import j from "./1.jpg";
+import Client from "../Client";
 import Vector from "./Vector 2.png";
 
 function Screen() {
+  const [Data, setData] = useState([]);
+
+  useEffect(() => {
+    Client.fetch(
+      `*[_type==''] {  title,
+        releaseDate,
+        rating,
+        
+      slug,
+      poster{asset->{url}}
+      }`
+    )
+      .then((data) => {
+        setData(data);
+        console.log(data);
+      })
+      .catch(console.error);
+  }, []);
   return (
     <div
       className={style.container}
