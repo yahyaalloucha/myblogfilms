@@ -3,13 +3,15 @@ import React, { useEffect, useState } from "react";
 import j from "./1.jpg";
 import Client from "../Client";
 import Vector from "./Vector 2.png";
+import BlockContent from "@sanity/block-content-to-react";
 
 function Screen() {
   const [Data, setData] = useState([]);
 
   useEffect(() => {
     Client.fetch(
-      `*[_type==''] {  title,
+      `*[_type=='screen']  {  title,
+        overview,
         releaseDate,
         rating,
         
@@ -24,19 +26,27 @@ function Screen() {
       .catch(console.error);
   }, []);
   return (
-    <div
-      className={style.container}
-      style={{ backgroundImage: "url(" + j + ")" }}
-    >
-      <img className={style.img} src={j} />
-      <div className={style.info}>
-        <h1 className={style.h1}>title</h1>
-        <p>description</p>
-        <div className={style.trading}>
-          <img src={Vector} />
-          <p>hey</p>
-        </div>
-      </div>
+    <div className={style.bigcontainer}>
+      {Data.map((screen) => {
+        return (
+          <div
+            className={style.container}
+            style={{ backgroundImage: `url(${screen.poster.asset.url})` }}
+          >
+            <div className={style.info}>
+              <h1 className={style.h1}>{screen.title}</h1>
+              <div className={style.Bl}>
+                <BlockContent blocks={screen.overview} />
+              </div>
+
+              <div className={style.trading}>
+                <img className={style.Vector} src={Vector} />
+                <p className={style.rating}>{screen.rating}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

@@ -1,3 +1,7 @@
+.bigcontainer {
+  display: flex;
+  height: 100vh;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -12,11 +16,12 @@
 }
 .h1 {
   color: black;
+  color: #ffffff;
 }
 
 .info {
   position: absolute;
-  bottom: 100px;
+  bottom: 400px;
   left: 5vw;
 }
 .trading {
@@ -24,5 +29,19 @@
   align-items: center;
   flex-direction: row;
   position: absolute;
-  top: 500px;
+}
+.rating {
+  font-family: Roboto;
+
+  padding-left: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+}
+.Bl {
+  display: flex;
+  width: 30vw !important;
+  background-color: aqua !important;
+  color: #ffffff !important;
+  font-size: larger;
 }

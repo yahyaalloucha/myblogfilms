@@ -2,6 +2,8 @@ import style from "./Tredingmovies.module.css";
 import Client from "../Client";
 import React, { useEffect, useState } from "react";
 import imageUrlBuilder from "@sanity/image-url";
+import { Link } from "react-router-dom";
+
 function Tredingmovies() {
   const [Data, setData] = useState([]);
   const builder = imageUrlBuilder(Client);
@@ -31,6 +33,9 @@ function Tredingmovies() {
         {Data.map((movie) => {
           return (
             <div className={style.contents}>
+              <span>
+                <img src={movie.poster.asset.url} className={style.poster} />
+              </span>
               <p
                 key={movie.title}
                 style={{
@@ -39,10 +44,6 @@ function Tredingmovies() {
               >
                 {movie.title}
               </p>
-
-              <span>
-                <img src={movie.poster.asset.url} className={style.poster} />
-              </span>
               <p style={{ color: "white" }}>{movie.releaseDate.substr(0, 4)}</p>
             </div>
           );
