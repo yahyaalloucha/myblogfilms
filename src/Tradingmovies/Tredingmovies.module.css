@@ -29,12 +29,11 @@ h1 {
   width: 33%;
   max-width: 33%;
   height: 700px;
-  padding: 12px 12px;
+  padding: 12px 10px;
   box-sizing: border-box;
 }
 
 .poster {
   max-height: 600px;
   object-fit: cover;
-  max-width: 300px;
 }

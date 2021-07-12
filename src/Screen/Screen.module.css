@@ -21,7 +21,7 @@
 
 .info {
   position: absolute;
-  bottom: 400px;
+  bottom: 30%;
   left: 5vw;
 }
 .trading {
@@ -40,8 +40,16 @@
 }
 .Bl {
   display: flex;
-  width: 30vw !important;
-  background-color: aqua !important;
+
   color: #ffffff !important;
-  font-size: larger;
+  width: 862px;
+  height: 206px;
+  left: 82px;
+  top: 504px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
 }
