@@ -1,0 +1,36 @@
+.bigcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.cover {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 58vh;
+}
+
+.h1 {
+  color: #ffffff;
+  padding-left: 4vw;
+  padding-bottom: 15vw;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 36px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  width: 14.5vw;
+  height: 39vh;
+}
+.myimg {
+  width: 90%;
+  height: 100%;
+  padding-left: 10vw;
+  padding-bottom: 40vh;
+}

@@ -1,6 +1,8 @@
 import Client from "../Client";
 import React, { useEffect, useState } from "react";
 import style from "./TrendingTvs.module.css";
+import imageUrlBuilder from "@sanity/image-url";
+import { Link } from "react-router-dom";
 
 function TrendingTvs() {
   const [Data, setData] = useState([]);
@@ -12,6 +14,7 @@ function TrendingTvs() {
         rating,
         
       slug,
+      cover{asset->{url}},
       poster{asset->{url}}
       }`
     )
@@ -32,16 +35,21 @@ function TrendingTvs() {
           return (
             <div className={style.contents}>
               <div className={style.content}>
-                <span>
-                  <img
-                    src={trendtv.poster.asset.url}
-                    className={style.poster}
-                  />
-                </span>
-                <p key={trendtv.title} className={style.tit}>
-                  {trendtv.title}
-                </p>
-                <p className={style.d}>{trendtv.releaseDate.substr(0, 4)}</p>
+                <Link
+                  to={"/" + trendtv.slug.current}
+                  key={trendtv.slug.current}
+                >
+                  <span>
+                    <img
+                      src={trendtv.poster.asset.url}
+                      className={style.poster}
+                    />
+                  </span>
+                  <p key={trendtv.title} className={style.tit}>
+                    {trendtv.title}
+                  </p>
+                  <p className={style.d}>{trendtv.releaseDate.substr(0, 4)}</p>
+                </Link>
               </div>
             </div>
           );

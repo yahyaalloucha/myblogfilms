@@ -15,7 +15,8 @@ function Tredingmovies() {
         rating,
         
       slug,
-      poster{asset->{url}}
+      poster{asset->{url}},
+      cover{asset->{url}}
       }`
     )
       .then((data) => {
@@ -33,18 +34,22 @@ function Tredingmovies() {
         {Data.map((movie) => {
           return (
             <div className={style.contents}>
-              <span>
-                <img src={movie.poster.asset.url} className={style.poster} />
-              </span>
-              <p
-                key={movie.title}
-                style={{
-                  color: "white",
-                }}
-              >
-                {movie.title}
-              </p>
-              <p style={{ color: "white" }}>{movie.releaseDate.substr(0, 4)}</p>
+              <Link to={"/" + movie.slug.current} key={movie.slug.current}>
+                <span>
+                  <img src={movie.poster.asset.url} className={style.poster} />
+                </span>
+                <p
+                  key={movie.title}
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  {movie.title}
+                </p>
+                <p style={{ color: "white" }}>
+                  {movie.releaseDate.substr(0, 4)}
+                </p>
+              </Link>
             </div>
           );
         })}
