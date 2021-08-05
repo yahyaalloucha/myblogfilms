@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./Details.module.css";
+import Vector from "../Screen/Vector 2.png";
 import Search from "../Search/Search";
 import Client from "../Client";
 import { useParams } from "react-router";
@@ -17,6 +18,7 @@ function Details() {
             overview,
             releaseDate,
             rating,
+            trailer,
             slug,
             poster{asset->{url}},
             cover{asset->{url}},
@@ -27,6 +29,7 @@ function Details() {
       .then((data) => setPostData(data[0]))
       .catch(console.error);
   }, [slug]);
+
   if (!postData) return <div>Loading...</div>;
   return (
     <div className={style.bigcontainer}>
@@ -35,19 +38,25 @@ function Details() {
         <img src={postData.cover.asset.url} className={style.cover} />
       </div>
 
-      <div className={style.img}>
+      <div className={style.info}>
         <img src={postData.poster.asset.url} className={style.myimg} />
-        <div className={style.info}>
+        <div className={style.src}>
           <h1 className={style.h1}>{postData.title}</h1>
 
           <div className={style.trading}>
+            <img src={Vector} className={style.vec} />
             <p className={style.rating}>{postData.rating}</p>
-            
+            <div className={style.Play}>
+              <a className={style.a} href={postData.trailer}>
+                Play Trailer
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div className={style.Bl}>
-        <BlockContent blocks={postData.overview} />
+        <h2 className={style.overview}>Overview </h2>
+        <BlockContent blocks={postData.overview} className={style.block} />
       </div>
     </div>
   );

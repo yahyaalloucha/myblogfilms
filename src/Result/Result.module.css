@@ -1,0 +1,17 @@
+.container {
+  background-color: blanchedalmond !important;
+  display: flex;
+  margin-top: 10vh;
+  align-items: center;
+  flex-direction: column;
+}
+.contents {
+  padding-left: 5vw;
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+}
+.poster {
+  width: 20vw;
+  height: 10vh;
+}
