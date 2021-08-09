@@ -4,6 +4,7 @@ import Screen from "./Screen/Screen";
 import Tredingmovies from "./Tradingmovies/Tredingmovies";
 import TrendingTvs from "./TrendingTvs/TrendingTvs";
 import Result from "./Result/Result";
+import "react-modal-video/scss/modal-video.scss";
 
 import Details from "./Details/Details";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

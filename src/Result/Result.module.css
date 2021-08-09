@@ -1,17 +1,39 @@
 .container {
-  background-color: blanchedalmond !important;
   display: flex;
   margin-top: 10vh;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+}
+.result {
+  display: flex;
+  flex-wrap: wrap;
 }
 .contents {
-  padding-left: 5vw;
-  padding-top: 10vh;
   display: flex;
+  flex-direction: column;
+  width: 30%;
   align-items: center;
+  max-height: 600px;
+
+  padding: 15px 30px;
+  box-sizing: border-box;
 }
 .poster {
-  width: 20vw;
-  height: 10vh;
+  height: 400px;
+  object-fit: cover;
+  width: 300px;
+  align-self: center;
+  align-items: center;
+  padding-left: 10%;
+}
+.title {
+  color: #ffffff;
+  padding-left: 10%;
+}
+.p {
+  color: #ffffff;
+  padding-left: 12%;
+}
+.link {
+  text-decoration-line: none !important;
 }

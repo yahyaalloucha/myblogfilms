@@ -24,26 +24,27 @@ function Result() {
 
   return (
     <div className={style.container}>
-      {Data.map((movie) => {
-        return (
-          <div className={style.contents}>
-            <Link to={"/" + movie.slug.current} key={movie.slug.current}>
-              <span>
-                <img src={movie.poster.asset.url} className={style.poster} />
-              </span>
-              <p
-                key={movie.title}
-                style={{
-                  color: "white",
-                }}
+      <div className={style.result}>
+        {Data.map((movie) => {
+          return (
+            <div className={style.contents}>
+              <Link
+                to={"/" + movie.slug.current}
+                key={movie.slug.current}
+                className={style.link}
               >
-                {movie.title}
-              </p>
-              <p style={{ color: "white" }}>{movie.releaseDate.substr(0, 4)}</p>
-            </Link>
-          </div>
-        );
-      })}
+                <span>
+                  <img src={movie.poster.asset.url} className={style.poster} />
+                </span>
+                <p key={movie.title} className={style.title}>
+                  {movie.title}
+                </p>
+                <p className={style.p}>{movie.releaseDate.substr(0, 4)}</p>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

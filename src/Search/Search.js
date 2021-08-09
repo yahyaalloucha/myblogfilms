@@ -13,9 +13,11 @@ function Search() {
   };
   return (
     <div className={style.Container}>
-      <div className={style.vilm}>
-        <h1 className={style.h1}>VILM</h1>
-      </div>
+      <Link to="/">
+        <div className={style.vilm}>
+          <h1 className={style.h1}>VILM</h1>
+        </div>
+      </Link>
       <span className={style.input}>
         <input
           type="text"

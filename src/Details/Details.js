@@ -4,10 +4,14 @@ import Vector from "../Screen/Vector 2.png";
 import Search from "../Search/Search";
 import Client from "../Client";
 import { useParams } from "react-router";
+import ModalVideo from "react-modal-video";
+
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 function Details() {
+  const [isOpen, setOpen] = useState(false);
   const [postData, setPostData] = useState(null);
+
   const { slug } = useParams();
   const builder = imageUrlBuilder(Client);
 
@@ -47,13 +51,22 @@ function Details() {
             <img src={Vector} className={style.vec} />
             <p className={style.rating}>{postData.rating}</p>
             <div className={style.Play}>
-              <a className={style.a} href={postData.trailer}>
+              <a className={style.a} onClick={() => setOpen(true)}>
                 Play Trailer
               </a>
+              <ModalVideo
+                channel="youtube"
+                autoplay
+                isOpen={isOpen}
+                videoId={postData.trailer}
+                className={style.modal}
+                onClose={() => setOpen(false)}
+              />
             </div>
           </div>
         </div>
       </div>
+
       <div className={style.Bl}>
         <h2 className={style.overview}>Overview </h2>
         <BlockContent blocks={postData.overview} className={style.block} />
