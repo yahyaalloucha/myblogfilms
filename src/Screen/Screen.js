@@ -30,7 +30,10 @@ function Screen() {
         return (
           <div
             className={style.container}
-            style={{ backgroundImage: `url(${screen.poster.asset.url})` }}
+            style={{
+              backgroundImage: `url(${screen.poster.asset.url})`,
+              backgroundSize: "cover",
+            }}
           >
             <div className={style.info}>
               <h1 className={style.h1}>{screen.title}</h1>

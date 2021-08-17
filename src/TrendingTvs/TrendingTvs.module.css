@@ -93,3 +93,61 @@ h1 {
 .biggy {
   text-decoration-line: underline;
 }
+@media (min-width: 1110px) and (max-width: 1339px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 700px;
+    margin-left: 2%;
+  }
+  .poster {
+    width: 29vw !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 1109px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 500px;
+    margin-left: 2%;
+  }
+  .poster {
+    width: 29vw !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 799px) {
+  .container {
+    padding-left: 2%;
+  }
+  .contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 400px;
+    margin-left: 2%;
+  }
+  .poster {
+    width: 29vw !important;
+  }
+}
+@media (min-width: 200px) and (max-width: 499px) {
+  .container {
+    padding-left: 2%;
+  }
+  h1 {
+    width: 50vw !important;
+    font-size: 20px !important;
+  }
+  .contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2%;
+  }
+  .poster {
+    width: 25vw !important;
+  }
+}

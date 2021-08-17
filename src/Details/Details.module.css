@@ -101,3 +101,106 @@
   width: 30vw;
   display: flex;
 }
+@media (min-width: 389px) and (max-width: 600px) {
+  .myimg {
+    width: 30vw;
+    height: 80%;
+  }
+  .h1 {
+    font-size: 18px;
+  }
+  .Play {
+    font-size: 10px;
+    padding: 4px 4px;
+    margin-left: 2vw;
+  }
+  .vec {
+    padding-top: 0px;
+    width: 20px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .cover {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .myimg {
+    width: 30vw;
+    height: 80%;
+  }
+  .h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .Play {
+    font-size: 10px;
+    padding: 4px 4px;
+    margin-left: 2vw;
+  }
+  .vec {
+    padding-top: 0px;
+    width: 20px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .cover {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .myimg {
+    width: 30vw;
+    height: 80%;
+  }
+  .h1 {
+    font-size: 18px;
+  }
+  .Play {
+    font-size: 10px;
+    padding: 4px 4px;
+    margin-left: 2vw;
+  }
+  .vec {
+    padding-top: 0px;
+    width: 20px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .cover {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+}
+@media (min-width: 200px) and (max-width: 323px) {
+  .myimg {
+    width: 30vw;
+    height: 80%;
+  }
+  .h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .Play {
+    font-size: 10px;
+    padding: 4px 4px;
+    width: 20vw;
+    margin-left: 2vw;
+  }
+  .vec {
+    padding-top: 0px;
+    width: 20px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .cover {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+}

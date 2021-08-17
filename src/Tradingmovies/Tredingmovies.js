@@ -30,7 +30,6 @@ function Tredingmovies() {
     <div className={style.container}>
       <h1>Treding Movies</h1>
       <div className={style.movies}>
-        /*
         {Data.map((movie) => {
           return (
             <div className={style.contents}>

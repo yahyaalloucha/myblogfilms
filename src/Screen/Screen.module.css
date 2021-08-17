@@ -1,12 +1,12 @@
 .bigcontainer {
   display: flex;
-  height: 100vh;
+  height: 80vh;
+  width: 100vw;
 }
 .container {
   display: flex;
   flex-direction: column;
   width: 100vw;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,15 +15,16 @@
   padding-top: 100px;
 }
 .h1 {
-  color: black;
   color: #ffffff;
+  max-width: 50% !important;
 }
 
 .info {
-  position: absolute;
   bottom: 30%;
-  left: 5vw;
+  padding-left: 5%;
+  width: 80%;
 }
+
 .trading {
   display: flex;
   align-items: center;
@@ -42,8 +43,7 @@
   display: flex;
 
   color: #ffffff !important;
-  width: 862px;
-  height: 206px;
+  width: 70%;
   left: 82px;
   top: 504px;
 
@@ -52,4 +52,57 @@
   font-weight: normal;
   font-size: 28px;
   line-height: 33px;
+}
+@media (max-width: 1200px) {
+  .bigcontainer {
+    width: 100vw;
+  }
+  .info {
+    bottom: 0%;
+    padding-left: 3%;
+  }
+}
+
+@media (min-width: 892px) and (max-width: 1119px) {
+  .bigcontainer {
+    width: 100vw !important;
+    height: 70vh;
+  }
+  .info {
+    bottom: 10%;
+  }
+}
+@media (min-width: 555px) and (max-width: 891px) {
+  .bigcontainer {
+    height: 85vh;
+  }
+  .info {
+    bottom: 10%;
+  }
+  .Bl {
+    width: 80vw;
+    height: 50vh;
+  }
+}
+@media (min-width: 468px) and (max-width: 554px) {
+  .bigcontainer {
+    height: 60vh;
+  }
+  .info {
+    bottom: 10%;
+  }
+  .Bl {
+    display: none;
+  }
+  .trading {
+    margin-left: 80vw;
+  }
+}
+@media (min-width: 200px) and (max-width: 468px) {
+  .Bl {
+    display: none;
+  }
+  .bigcontainer {
+    height: 50vh;
+  }
 }
