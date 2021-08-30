@@ -1,6 +1,7 @@
 import "./App.css";
 import Search from "./Search/Search";
 import Screen from "./Screen/Screen";
+import Home from "./pages/Home";
 import Tredingmovies from "./Tradingmovies/Tredingmovies";
 import TrendingTvs from "./TrendingTvs/TrendingTvs";
 import Result from "./Result/Result";
@@ -16,11 +17,7 @@ function App() {
         <Search />
 
         <Switch>
-          <Route exact path="/" component={(Tredingmovies, TrendingTvs)}>
-            <Screen />
-            <Tredingmovies />
-            <TrendingTvs />
-          </Route>
+          <Route exact path="/" component={Home}></Route>
         </Switch>
       </div>
       <Switch>
