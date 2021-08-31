@@ -17,8 +17,7 @@ export default function Home() {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage:
-              "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1517845732/1517845731.jpg",
+            ogImage: "http://placekitten.com/1200/630",
             ogImageAlt: "Kittens",
             ogImageWidth: 1200,
             ogImageHeight: 630,
