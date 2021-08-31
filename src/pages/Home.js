@@ -17,11 +17,8 @@ export default function Home() {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "http://placekitten.com/1200/630",
-            ogImageAlt: "Kittens",
-            ogImageWidth: 1200,
-            ogImageHeight: 630,
-            ogImageType: "image/jpeg",
+            ogImage:
+              "https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/_T2_lCNF8Zl.png",
           },
         }}
         twitter={{
