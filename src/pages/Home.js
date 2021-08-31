@@ -13,7 +13,7 @@ export default function Home() {
       <TrendingTvs />
       <SuperSEO
         title="Movies"
-        description="React SEO component with OpenGraph and Twitter Cards support."
+        description="site web about the best movies and series "
         lang="en"
         openGraph={{
           ogImage: {
@@ -27,8 +27,7 @@ export default function Home() {
         }}
         twitter={{
           twitterSummaryCard: {
-            summaryCardImage:
-              "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1517845732/1517845731.jpg",
+            summaryCardImage: "http://placekitten.com/1200/630",
             summaryCardImageAlt: "Kittens",
             summaryCardSiteUsername: "justinmahar",
           },
