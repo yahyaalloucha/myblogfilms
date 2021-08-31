@@ -11,24 +11,6 @@ export default function Home() {
       <Screen />
       <Tredingmovies />
       <TrendingTvs />
-      <SuperSEO
-        title="Movies"
-        description="site web about the best movies and series "
-        lang="en"
-        openGraph={{
-          ogImage: {
-            ogImage:
-              "https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/_T2_lCNF8Zl.png",
-          },
-        }}
-        twitter={{
-          twitterSummaryCard: {
-            summaryCardImage: "http://placekitten.com/1200/630",
-            summaryCardImageAlt: "Kittens",
-            summaryCardSiteUsername: "justinmahar",
-          },
-        }}
-      />
     </div>
   );
 }
