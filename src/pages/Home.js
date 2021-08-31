@@ -17,7 +17,8 @@ export default function Home() {
         lang="en"
         openGraph={{
           ogImage: {
-            ogImage: "http://placekitten.com/1200/630",
+            ogImage:
+              "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1517845732/1517845731.jpg",
             ogImageAlt: "Kittens",
             ogImageWidth: 1200,
             ogImageHeight: 630,
@@ -26,7 +27,8 @@ export default function Home() {
         }}
         twitter={{
           twitterSummaryCard: {
-            summaryCardImage: "http://placekitten.com/1200/630",
+            summaryCardImage:
+              "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1517845732/1517845731.jpg",
             summaryCardImageAlt: "Kittens",
             summaryCardSiteUsername: "justinmahar",
           },
