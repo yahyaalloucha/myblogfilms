@@ -2,6 +2,7 @@ import Client from "../Client";
 import React, { useEffect, useState } from "react";
 import style from "./Result.module.css";
 import { Link, useParams } from "react-router-dom";
+import { SuperSEO } from "react-super-seo";
 
 function Result() {
   const { slug } = useParams();
