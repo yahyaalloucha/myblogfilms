@@ -1,12 +1,13 @@
 .container {
   display: flex;
-  margin-top: 10vh;
+
   align-items: center;
   flex-direction: row;
 }
 .result {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10vw;
 }
 .contents {
   display: flex;

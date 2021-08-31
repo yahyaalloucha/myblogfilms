@@ -4,6 +4,7 @@ import style from "./Result.module.css";
 import { Link, useParams } from "react-router-dom";
 import { SuperSEO } from "react-super-seo";
 
+
 function Result() {
   const { slug } = useParams();
   const [Data, setData] = useState([]);

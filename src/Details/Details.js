@@ -5,6 +5,7 @@ import Search from "../Search/Search";
 import Client from "../Client";
 import { useParams } from "react-router";
 import ModalVideo from "react-modal-video";
+import { SuperSEO } from "react-super-seo";
 
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
@@ -37,6 +38,24 @@ function Details() {
   if (!postData) return <div>Loading...</div>;
   return (
     <div className={style.bigcontainer}>
+      <SuperSEO
+        title="Dtails"
+        description="Web site about the best movies and series"
+        lang="en"
+        openGraph={{
+          ogImage: {
+            ogImage:
+              "https://images.squarespace-cdn.com/content/v1/605a3c96f069ed0390eebc98/1616797838975-X0NW8M315DK5VW83VHIN/About_Hero.jpg",
+          },
+        }}
+        twitter={{
+          twitterSummaryCard: {
+            summaryCardImage: "http://placekitten.com/1200/630",
+            summaryCardImageAlt: "Kittens",
+            summaryCardSiteUsername: "justinmahar",
+          },
+        }}
+      />
       <Search />
       <div className={style.container}>
         <img src={postData.cover.asset.url} className={style.cover} />
