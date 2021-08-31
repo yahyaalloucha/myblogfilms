@@ -16,8 +16,8 @@ function App() {
     <Router>
       <div className="CON">
         <SuperSEO
-          title="SEO | React Super SEO"
-          description="React SEO component with OpenGraph and Twitter Cards support."
+          title="Home"
+          description="Web site about the best movies and series"
           lang="en"
           openGraph={{
             ogImage: {
