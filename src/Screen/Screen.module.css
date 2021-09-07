@@ -76,6 +76,9 @@
   .bigcontainer {
     height: 85vh;
   }
+  .h1 {
+    font-size: 15px;
+  }
   .info {
     bottom: 10%;
   }
@@ -95,7 +98,8 @@
     display: none;
   }
   .trading {
-    margin-left: 80vw;
+    margin-left: 80vw !important;
+    margin-top: -10vw !important;
   }
 }
 @media (min-width: 200px) and (max-width: 468px) {
